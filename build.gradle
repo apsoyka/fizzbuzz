@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath group: 'org.jetbrains.kotlin',
+                  name: 'kotlin-gradle-plugin',
+                  version: '1.2.21'
+    }
+}
+
+apply plugin: 'kotlin'
+
+group 'com.packtpub'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile group: 'org.jetbrains.kotlin',
+            name: 'kotlin-stdlib'
+}
